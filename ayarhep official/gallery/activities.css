@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: grid;
+    justify-content: center;
+    align-content: end;
+    min-height: 100vh;
+    background: #e8e8e8;
+    padding: 50px;
+}
+
+
+header { 
+    background-color: #ffffff; 
+    color: #000000; 
+    text-align: center; 
+} 
+
+nav { 
+    background-color: #242424; 
+    padding: 10px; 
+} 
+
+nav a { 
+    color: #fff; 
+    text-decoration: none; 
+    padding: 10px; 
+    margin-right: 10px; 
+    display: inline-block; 
+} 
+
+.container { 
+    display: flex; 
+    justify-content: space-between; 
+    max-width: 95%; 
+    margin: 0 auto; 
+    padding: 20px; 
+} 
+
+article p { 
+    text-align: justify; 
+} 
+
+main { 
+    flex: 2; 
+} 
+
+article { 
+    margin-bottom: 20px; 
+    padding: 10px 20px; 
+    border: 1px solid rgb(145, 145, 145); 
+    margin-right: 10px; 
+} 
+
+aside { 
+    flex: 1; 
+    background-color: #c9c9c9; 
+    padding: 10px; 
+} 
+
+footer { 
+    background-color: #242424; 
+    color: #fff; 
+    text-align: center; 
+    position: fixed; 
+    bottom: 0; 
+    width: 100%; 
+} 
+/* Add Font Awesome styles */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+footer .container .sci li a i,
+footer .container .info li span {
+    font-size: 20px;
+    color: #fff;
+}
+
+/* Hover effect for Font Awesome icons */
+footer .container .sci li a:hover {
+    background-color: red;
+}
+
+/* Hover effect for Font Awesome text */
+footer .container .quicklinks ul li a:hover {
+    color: red;
+}
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+/* Remove list-style for Font Awesome icons */
+footer .container .sci,
+footer .container .quicklinks ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Adjust styles for the icons */
+footer .container .sci li,
+footer .container .quicklinks ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+footer .container .sci li a i,
+footer .container .quicklinks ul li a i {
+    font-size: 20px;
+    color: #fff;
+}
+
+/* Hover effect for Font Awesome icons */
+footer .container .sci li a:hover {
+    background-color: red;
+}
+
+/* Hover effect for Font Awesome text */
+footer .container .quicklinks ul li a:hover {
+    color: red;
+}
+footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: #fff;
+}
+
+footer .container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+footer .container .sec h2 {
+    position: relative;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+footer .container .sec h2 p {
+    color: #555;
+}
+
+footer .container .sci {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+}
+
+footer .container .sci li a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background: #333;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background-color 0.3s; /* Added transition for a smoother effect */
+}
+
+footer .container .sci li a i {
+    color: #fff;
+    font-size: 20px;
+}
+
+footer .container .sci li a:hover {
+    background-color: red;
+}
+
+footer .container .quicklinks {
+    position: relative;
+}
+
+footer .container .quicklinks ul li {
+    list-style: none;
+}
+
+footer .container .quicklinks ul li a {
+    color: #555;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+    transition: color 0.3s; /* Added transition for a smoother effect */
+}
+
+footer .container .quicklinks ul li a:hover {
+    color: red;
+}
+
+footer .container .contact .info li {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    margin-bottom: 16px;
+}
+
+footer .container .contact .info li span {
+    color: #555;
+    font-size: 20px;
+}

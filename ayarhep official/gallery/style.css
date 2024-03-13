@@ -372,56 +372,7 @@ a img {
 .main:hover  .shadow1{
     transform: translateY(-25px);
 } 
- /* about */
- .course {
-    width: 80%; /* Increase the width */
-    height: 110%; /* Increase the height */
-    margin: auto;
-    text-align: center;
-    padding-top: 100px;
-}
-
-
-h1{
-    font-size: 36px;
-    font-weight: 600;
-}
-
-p{
-    color: #000000;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 22px;
-    padding:  10px ;
-}
-.row{
-    margin-top: 5%;
-    display: flex;
-    justify-content: space-between;
-}
-.course-col{
-    flex-basis: 23%;
-    background: #f44336;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    padding: 20px 12px;
-    box-sizing: border-box; 
-    transition: 0.5s;
-}
-h3{
-    text-align: center;
-    font-weight: 600;
-    margin: 10px 0;
-}
-.course-col:hover{
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
-
-}
-@media(max-width: 700px){
-    .row{
-        flex-direction: column;
-    }
-}
+ 
 /* counter */
 .counter {
     display: flex;
@@ -462,6 +413,24 @@ h3{
 }
 .post-review {
     margin-bottom: 20px; /* Adjust the margin as needed */
+}
+/* parallax */
+.pbout,
+.counter {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0; /* Adjust the padding as needed */
+}
+
+.pbout {
+  background-image: url('/ayarhep\ official/beige.png'); /* Replace with the path to your parallax image */
+}
+
+.counter {
+  background-image: url('/ayarhep\ official/beige.png'); /* Replace with the path to another parallax image */
 }
 
 /* content  */

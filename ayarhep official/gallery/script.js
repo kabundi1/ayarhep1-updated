@@ -14,3 +14,19 @@ valueDisplay.forEach((valueDisplay) => {
         }
     }, duratation); // Use duratation instead of interval for smoother animation
 });
+
+// parallax
+$(document).ready(function () {
+    $(window).scroll(function () {
+      var scrollPosition = $(this).scrollTop();
+  
+      // Adjust the scroll factor based on your preference
+      $('.pbout').css({
+        'background-position': '50% ' + (scrollPosition / 2) + 'px'
+      });
+  
+      $('.counter').css({
+        'background-position': '50% ' + (scrollPosition / 2) + 'px'
+      });
+    });
+  });
